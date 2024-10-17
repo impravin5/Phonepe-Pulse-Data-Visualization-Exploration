@@ -58,16 +58,6 @@ Make sure you have the following installed on your system:
 - GitHub account for accessing the PhonePe Pulse data repository.
 
 ### Installation
-
-## Set up MySQL Database:
-Create a MySQL database to store the data. Update the MySQL connection details in the phonepe.py file:
-
-host = "localhost"
-user = "root"
-password = "your_password"
-database = "phonepe_data"
-Set the Git executable path (Windows users):
-
 ## Clone or update the PhonePe Pulse repository:
 
 Run the phonepe.py script to clone the repository or verify if it exists. If the repository exists, it will be updated.
@@ -98,13 +88,13 @@ This project supports a variety of data visualizations, including:
 * Data Extraction:
     - The script extracts JSON files from the repository, parses them, and converts them into Pandas DataFrames.
 
-*Storing Data in MySQL:
+* Storing Data in MySQL:
     - Data from the JSON files is stored in tables in a MySQL database. Each table represents a category (state-wise, year-wise, category-wise data).
 
-*Visualization:
+* Visualization:
     - The Streamlit dashboard uses Plotly and Matplotlib to create visualizations like bar charts, line graphs, scatter plots, and choropleth maps to display the transaction data.
 
-*Key Interactions:
+* Key Interactions:
     - The dashboard offers filters for year, category, and state to customize the visualizations and explore specific data segments.
 
 ### License
