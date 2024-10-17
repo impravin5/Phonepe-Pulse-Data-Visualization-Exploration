@@ -4,12 +4,13 @@ This project provides a comprehensive analysis and visualization of data from th
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Features](#features)
+- [Uses of This Project](#Uses-of-This-Project)
+- [Key Metrics Handled](#Key-Metrics-Handled)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data Visualization](#data-visualization)
-- [Contributing](#contributing)
+- [ Steps and Usage](#Steps-and-Usage)
 - [License](#license)
 
 ## Introduction
@@ -56,7 +57,7 @@ Make sure you have the following installed on your system:
 - MySQL Server
 - GitHub account for accessing the PhonePe Pulse data repository.
 
-### Steps to Install
+### Installation
 
 ## Set up MySQL Database:
 Create a MySQL database to store the data. Update the MySQL connection details in the phonepe.py file:
@@ -90,22 +91,21 @@ This project supports a variety of data visualizations, including:
 - Geographical Maps: Explore transaction data across India's states using choropleth maps.
 - These visualizations are interactive and help in gaining insights from the PhonePe Pulse data.
 
-## Steps and Usage
+### Steps and Usage
 * Cloning or Updating the Repository:
+    - The script phonepe.py checks if the repository already exists. If not, it clones the PhonePe Pulse repository. If it exists, it pulls the latest updates to ensure the data is current.
 
-- The script phonepe.py checks if the repository already exists. If not, it clones the PhonePe Pulse repository. If it exists, it pulls the latest updates to ensure the data is current.
-- 
 * Data Extraction:
-- The script extracts JSON files from the repository, parses them, and converts them into Pandas DataFrames.
+    - The script extracts JSON files from the repository, parses them, and converts them into Pandas DataFrames.
 
 *Storing Data in MySQL:
-- Data from the JSON files is stored in tables in a MySQL database. Each table represents a category (state-wise, year-wise, category-wise data).
+    - Data from the JSON files is stored in tables in a MySQL database. Each table represents a category (state-wise, year-wise, category-wise data).
 
 *Visualization:
-- The Streamlit dashboard uses Plotly and Matplotlib to create visualizations like bar charts, line graphs, scatter plots, and choropleth maps to display the transaction data.
-- 
-*Key Interactions:
-- The dashboard offers filters for year, category, and state to customize the visualizations and explore specific data segments.
+    - The Streamlit dashboard uses Plotly and Matplotlib to create visualizations like bar charts, line graphs, scatter plots, and choropleth maps to display the transaction data.
 
-## License
+*Key Interactions:
+    - The dashboard offers filters for year, category, and state to customize the visualizations and explore specific data segments.
+
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
