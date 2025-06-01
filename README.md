@@ -47,7 +47,6 @@ These metrics help users gain actionable insights into digital payment behavior 
 - **MySQL**: For storing and querying transaction data.
 - **Plotly and Matplotlib**: For creating visualizations, including interactive charts and geographical maps.
 - **Streamlit**: For building the interactive web dashboard.
-- **Git**: For version control and managing updates from the GitHub repository.
 
 ### Prerequisites
 
